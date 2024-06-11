@@ -14,13 +14,14 @@ for (int i = 0; i < users.Length; i++)
 
    Console.WriteLine("Please enter user data");
 
-  Console.Write("Full Name - ");
+  Console.Write("Full Name: ");
    string fullName = Console.ReadLine();
 
-   Console.Write("Email - ");
+   Console.Write("Email: ");
    string email = Console.ReadLine();
 
-   Console.Write("Full Name - ");
+    repeat:
+   Console.Write("Password: ");
    string password = Console.ReadLine();
 
 
@@ -28,10 +29,15 @@ for (int i = 0; i < users.Length; i++)
   {
        users[i] = new Student(fullName, email, password);
    }
+    else
+    {
+        goto repeat;
+        
+    }
 }
 
 
-while (isTerminateApp)
+while (!isTerminateApp)
 {
 
     Console.WriteLine("Select available commands");
