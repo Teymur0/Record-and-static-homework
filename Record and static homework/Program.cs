@@ -9,27 +9,26 @@ int userCommand;
 bool isTerminateApp = false;
 
 
-//for (int i = 0; i < users.Length; i++)
-//{
+for (int i = 0; i < users.Length; i++)
+{
 
-//    Console.WriteLine("Please enter user data");
+   Console.WriteLine("Please enter user data");
 
-//    Console.Write("Full Name - ");
-//    string fullName = Console.ReadLine();
+  Console.Write("Full Name - ");
+   string fullName = Console.ReadLine();
 
-//    Console.Write("Email - ");
-//    string email = Console.ReadLine();
+   Console.Write("Email - ");
+   string email = Console.ReadLine();
 
-//    Console.Write("Full Name - ");
-//    string password = Console.ReadLine();
+   Console.Write("Full Name - ");
+   string password = Console.ReadLine();
 
 
-//    if (User.PasswordChecker(password))
-//    {
-//        users[i] = new Student(fullName, email, password);
-//    }
-
-//}
+   if (User.PasswordChecker(password))
+  {
+       users[i] = new Student(fullName, email, password);
+   }
+}
 
 
 while (isTerminateApp)
